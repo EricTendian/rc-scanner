@@ -20,7 +20,7 @@
 'use strict';
 
 import EventEmitter from 'events';
-import naudiodon from 'naudiodon';
+
 
 import { Audio } from './audio.js';
 import { Com } from './com.js';
@@ -43,7 +43,7 @@ export class RcScanner extends EventEmitter {
             return;
 
         } else if (process.argv[2] === 'list-audio') {
-            console.log(naudiodon.getDevices());
+            console.log('Audio device listing not available (naudiodon removed)');
 
             return;
 
